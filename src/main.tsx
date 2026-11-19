@@ -1,0 +1,30 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import translationEN from "./locales/english/translation.json";
+import translationZH from "./locales/chinese/translation.json";
+import GlobalSettings from "./settings";
+
+i18n.use(initReactI18next).init({
+    resources: {
+        english: {
+            translation: translationEN,
+        },
+        chinese: {
+            translation: translationZH,
+        },
+    },
+    lng: GlobalSettings.finalLanguage(),
+});
+
+const root = ReactDOM.createRoot(
+    document.getElementById("root") as HTMLElement
+);
+root.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
+);

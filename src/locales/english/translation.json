@@ -1,0 +1,66 @@
+{
+    "title": "GIS Tile Download",
+
+    "common": {
+        "cancel": "Cancel",
+        "custom": "Custom"
+    },
+
+    "settings": {
+        "themes": {
+            "light": "Light",
+            "auto": "Auto",
+            "dark": "Dark"
+        },
+        "languages": {
+            "chinese": "Chinese",
+            "english": "English",
+            "auto": "Auto"
+        }
+    },
+
+    "description": {
+        "gis-tile-download": "Download GIS tiles from Google Maps, AutoNavi, ArcGIS, OpenStreetMap, satellite imagery, or a custom link."
+    },
+
+    "gis-tile-download": {
+        "google-map": "Google Map",
+        "auto-navi": "AutoNavi",
+        "auto-navi-no-label": "AutoNavi (No Label)",
+        "arc-gis": "ArcGIS",
+        "osm": "Open Street Map",
+        "google-satellite": "Google Satellite Image",
+        "auto-navi-satellite": "AutoNavi Satellite Image",
+        "arc-gis-satellite": "ArcGIS Satellite Image",
+        "tianditu-vector": "Tianditu Vector",
+        "tianditu-image": "Tianditu Imagery",
+        "tianditu-terrain": "Tianditu Terrain",
+        "tianditu-key": "Tianditu token",
+        "z-range": "Z Range",
+        "map-zoom": "Zoom",
+        "region": "Region",
+        "country": "Country",
+        "province": "Province",
+        "city": "City",
+        "district": "District",
+        "concurrency": "Concurrency",
+        "locate": "Locate",
+        "select-all": "Select All",
+        "clear": "Clear",
+        "download": "Download",
+        "message": {
+            "please-select": "Please select the area in map to download.",
+            "please-keep": "Please keep this page visible to avoid being frozen by the browser.",
+            "copyright-alert": "This site only provides the download function. The tile resources are from third-party public interfaces or open source platforms. They are for learning purposes only. Please do not use them for any infringing purposes.",
+            "enter-to-confirm": "Press Enter to confirm",
+            "unknown-error": "Unknown error, may be a compatibility issue, it is recommended to use the desktop Chrome browser.",
+            "region-failed": "Failed to load region data. Please try again later.",
+            "tianditu-key": "Tianditu requires a token. Apply for one in the Tianditu console and paste it here."
+        }
+    },
+
+    "components": {
+        "progress": "Progress",
+        "cancel": "Cancel"
+    }
+}
