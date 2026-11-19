@@ -479,7 +479,7 @@ export default function GisTileDownload() {
         }
 
         const url = choice < servers.length ? servers[choice].url : customUrl;
-        const center = mapRef.current?.getView().getCenter() ?? fromLonLat([0, 0]);
+        const center = mapRef.current?.getView().getCenter() ?? fromLonLat([104.5, 36]);
 
         if (mapRef.current) {
             if (loading.current > 0) {
