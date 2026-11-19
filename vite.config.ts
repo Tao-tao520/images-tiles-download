@@ -34,5 +34,5 @@ export default defineConfig({
       },
     }),
   ],
-  base: '/gis-tools/'
+  base: '/images-tiles-download/'
 })
