@@ -148,7 +148,7 @@ interface AreaNode {
 }
 
 async function fetchAreaNodes(adcode: string): Promise<AreaNode[]> {
-    const res = await fetch(`${DATAV_BOUND}/${adcode}_full.json`);
+    const res = await fetch(`${DATAV_BOUND}/${adcode}_full.json`, { referrerPolicy: "no-referrer" });
     if (!res.ok) {
         return [];
     }
@@ -610,7 +610,7 @@ export default function GisTileDownload() {
     // 按行政区边界框选，下载仍使用该边界的经纬度范围
     const applyOutline = async (adcode: string, token: number) => {
         try {
-            const res = await fetch(`${DATAV_BOUND}/${adcode}.json`);
+            const res = await fetch(`${DATAV_BOUND}/${adcode}.json`, { referrerPolicy: "no-referrer" });
             if (!res.ok) {
                 throw new Error(String(res.status));
             }
